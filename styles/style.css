@@ -289,12 +289,14 @@
     color: var(--highlight-color);
     text-transform: uppercase;
 }
-.brand-section{
-    background-color: var(--bg-color);
+.brand-section , .enterprise-section{
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
+.brand-section{
+    background-color: var(--bg-color);
+}
 .brand-images{
     display: flex;
     flex-direction: row;
@@ -315,4 +317,58 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
+}
+
+/* Enterprise Section - Start */
+.enterprise-section{
+    text-align: center;
+}
+.enterprise-heading{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.enterprise-content{
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 22px;
+    font-weight: 400;
+}
+.enterprise—quote{
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+.enterprise-section .container .row .col-12 img{
+    max-width: 100%;
+    object-fit: cover;
+
+}
+.enterprise-section .container .row .col-12 h3{
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+.enterprise-section .container .row .col-12 h4{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.enterprise-section .container .row .col-12 h6{
+    font-size: 10px;
+    color: var(--highlight-color);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-top: 5px;
+}
+
+
+@media screen and (min-width:576px) {
+    .enterprise-section{
+        text-align: left;
+        justify-content: center;
+    }
+
 }
